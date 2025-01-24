@@ -1,1 +1,24 @@
+# .gitignore
 
+# Python
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints
+
+# Environment Variables
+.env
+
+# Data Files
+data/
+
+# Streamlit Cache
+.streamlit/
