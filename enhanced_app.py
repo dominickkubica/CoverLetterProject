@@ -1,9 +1,8 @@
-# enhanced_app.py
+# app/enhanced_app.py
 
 import streamlit as st
 import pinecone
 from langchain.embeddings import OpenAIEmbeddings
-from langchain.vectorstores import Pinecone
 import pandas as pd
 import os
 import io
@@ -60,6 +59,20 @@ with st.sidebar.expander("🔑 Enter Your API Keys"):
     )
     if st.button("Save API Keys"):
         st.success("API Keys saved successfully!")
+
+# Informational Section for Obtaining API Keys
+with st.sidebar.expander("ℹ️ How to Obtain API Keys"):
+    st.markdown("""
+    **SerpApi API Key**:
+    - Sign up at [SerpApi](https://serpapi.com/) and navigate to your dashboard to find your API key.
+
+    **OpenAI API Key**:
+    - Sign up at [OpenAI](https://openai.com/) and generate an API key from the API section.
+
+    **Pinecone API Key & Environment**:
+    - Sign up at [Pinecone](https://www.pinecone.io/).
+    - Your Pinecone API key and environment can be found in your Pinecone dashboard.
+    """)
 
 # Navigation Sidebar
 st.sidebar.header("Navigation")
