@@ -1,1 +1,9 @@
+# requirements.txt
 
+streamlit
+serpapi
+langchain
+pinecone-client
+openai
+pdfminer.six
+python-docx
